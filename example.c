@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
         /* This is not strictly necessary unless there is
            an item not ending in a newline. */
-        fflush(stdout);
+        /* fflush(stdout); */
     } while ((++item)->text);
 
     exit(EXIT_SUCCESS);

@@ -10,11 +10,11 @@ Compile with `make`. Optionally, use `make test` to verify proper functioning.
 
 ## Usage
 
-Specify a shell command line that runs your program as a single argument:
+Specify a shell command line that runs your program (redirecting standard output to a PTY) as a single argument:
 
     ./tester ./example
 
-If that argument is omitted, the tester reads standard input:
+If that argument is omitted, the tester reads standard input (and does not use a PTY):
 
     ./example | ./tester
 
